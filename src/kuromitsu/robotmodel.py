@@ -77,7 +77,7 @@ class ArmROSRobotInterface(ROSRobotInterfaceBase):
     def default_controller(self):
         return [self.fullbody_controller]
 
-rospy.init_node('interface_controller')
+#rospy.init_node('interface_controller')
 r = RobotModel()
 urdf_path = resolve_filepath("", "package://kxr_models/urdf/kuromitsu.urdf")
 with open(urdf_path) as f:
@@ -89,7 +89,14 @@ for j in r.joint_list:
 ri = ArmROSRobotInterface(r, controller_timeout=1000)
         
 
+def servo_on():
+    ri.servo_on()
+
+def servo_off():
+    ri.servo_off()
+    
 def act(act_name):
+    ri.servo_on()
     json_filepath = "/home/ichikura/test-1219.json"
     if os.path.exists(json_filepath):
         try:
@@ -106,6 +113,7 @@ def act(act_name):
                 ri.wait_interpolation()
             for av in angles[1:]:
                 ri.angle_vector(av,0.1)
+                ri.wait_interpolation()
 
     else:
         print("There is not such file.")    

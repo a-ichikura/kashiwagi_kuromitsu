@@ -36,7 +36,6 @@ class Scene_node:
         #led_mode = rospy.Publisher("/led_mode", UInt16, queue_size=1)
         #led_rainbow_delta_hue = rospy.Publisher("/led_rainbow_delta_hue", UInt16, queue_size=1)
         #led_rgb = rospy.Publisher("/led_rgb", ColorRGBA, queue_size=1)
-        rospy.init_node("modules")
         
     def eye(self,mode=0):
         mode_msg = UInt16()

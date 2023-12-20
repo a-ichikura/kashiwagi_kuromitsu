@@ -11,3 +11,4 @@ import situation_1
 
 if __name__ == "__main__":
     situation_1.scene_1()
+    situation_1.scene_2()
