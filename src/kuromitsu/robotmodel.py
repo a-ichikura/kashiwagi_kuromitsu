@@ -97,7 +97,7 @@ def servo_off():
     
 def act(act_name):
     ri.servo_on()
-    json_filepath = "/home/ichikura/test-1219.json"
+    json_filepath = "/home/ichikura/test-1222.json"
     if os.path.exists(json_filepath):
         try:
             with open(json_filepath) as f:
