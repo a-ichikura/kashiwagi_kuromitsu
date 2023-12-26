@@ -97,7 +97,7 @@ def servo_off():
     
 def act(act_name):
     ri.servo_on()
-    json_filepath = "/home/ichikura/test-1222.json"
+    json_filepath = "/home/ichikura/kuromitsu_movie.json"
     if os.path.exists(json_filepath):
         try:
             with open(json_filepath) as f:
@@ -112,8 +112,8 @@ def act(act_name):
                 ri.angle_vector(angles[0],3)
                 ri.wait_interpolation()
             for av in angles[1:]:
-                ri.angle_vector(av,0.1)
-                ri.wait_interpolation()
+                ri.angle_vector(av,0.5)
+                #ri.wait_interpolation()
 
     else:
         print("There is not such file.")    

@@ -46,21 +46,38 @@ def test_3():
     act("tos_ball") #ballを投げる
     print("say ナイスボール")
 
+def test_4():
+    time.sleep(2)
+    print("move start")
+    cheek_led(r=255,g=105,b=180,brightness=10,mode=1)
+    act("nod") #test
+    eye(2)
+    print("done")
+
 def scene_1():
     time.sleep(2)
-    eye(6)
-    cheek_led(r=255,g=105,b=180,mode=1)
-    time.sleep(3)
-    eye(5)
-    cheek_led(r=135,g=206,b=235,brightness=10,mode=1)
-    time.sleep(3)
-    eye(2)
-    cheek_led(r=255,g=255,b=255,brightness=30,mode=3)
-    #print("{} done".format("cheek_led"))
-    #act("init") #動作の名前を入力
-    
+    eye(0)
+    cheek_led(r=255,g=105,b=180,brightness=10)
+
 def scene_2():
-    print("test start")
-    act("quite")
-    time.sleep(5)
-    act("init")
+    eye(0)
+    cheek_led(r=255,g=105,b=180,brightness=10)
+    act("patapata")
+    act("normal")
+
+def scene_3():
+    eye(4)
+    cheek_led(r=255,g=105,b=180,brightness=10)
+    act("look_left")
+    
+def scene_4():
+    eye(4)
+    cheek_led(r=255,g=105,b=180,brightness=10)
+    act("look_left")
+
+def scene_5():
+    time.sleep(2)
+    eye(3)
+    cheek_led(r=255,g=105,b=180,brightness=3)
+    act("sleepy")
+    
