@@ -10,7 +10,7 @@ from std_msgs.msg import ColorRGBA
 import situation_1
 
 if __name__ == "__main__":
-    # situation_1.scene_2()
-    print("scene_3 done")
     situation_1.scene_5()
     print("scene_5 done")
+    situation_1.scene_6()
+    print("scene_6 done")

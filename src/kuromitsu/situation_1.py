@@ -80,4 +80,10 @@ def scene_5():
     eye(3)
     cheek_led(r=255,g=105,b=180,brightness=3)
     act("sleepy")
+
+def scene_6():
+    time.sleep(2)
+    eye(3)
+    cheek_led(r=255,g=105,b=180,brightness=3)
+    act("sleepy_2")
     
