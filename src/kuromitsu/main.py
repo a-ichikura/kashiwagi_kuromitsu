@@ -11,8 +11,8 @@ import situation_1
 import situation_2
 
 if __name__ == "__main__":
-    situation_2.scene_7()
-    print("scene7 done")
+    situation_2.scene_6()
+    print("scene6 done")
    # situation_2.scene_3()
     #print("scene3 done ")
     #situation_2.scene_4()
