@@ -94,7 +94,7 @@ def servo_on():
 def servo_off():
     ri.servo_off()
 
-def act(act_name):
+def act(act_name, n_split=None):
     ri.servo_on()
     json_filepath = "/home/leus/kashiwagi_movie.json"
     if os.path.exists(json_filepath):
@@ -108,11 +108,15 @@ def act(act_name):
             angles = motion_dict[act_name]
             print(angles)
             if len(angles) > 0:
-                ri.angle_vector(angles[0],3)
+                ri.angle_vector(angles[0], 1)
                 ri.wait_interpolation()
-            for av in angles[1:]:
-                ri.angle_vector(av, 0.5)
+            new_angles = angles[1:]
+            if n_split is not None:
+                new_angles = new_angles[::n_split]
+            for av in new_angles:
+                ri.angle_vector(av, 0.1)
                 # ri.wait_interpolation()
+                rospy.sleep(0.05)
     else:
         print("There is not such file.")    
     

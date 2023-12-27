@@ -8,13 +8,18 @@ from std_msgs.msg import UInt16
 from std_msgs.msg import ColorRGBA
 
 import situation_1
+import situation_2
 
 if __name__ == "__main__":
     #situation_1.test_1()
     #situation_1.test_2()
     #situation_1.scene_2()
-    situation_1.scene_3()
-    situation_1.scene_4()
+    #situation_2.scene_1()
+    #situation_2.scene_2()
+    # situation_2.scene_3()
+    #situation_2.scene_4()
+    #situation_2.scene_6()
+    situation_2.scene_7()
     # situation_1.scene_8()
     #situation_1.scene_4()
     

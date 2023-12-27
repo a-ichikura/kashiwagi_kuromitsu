@@ -26,6 +26,9 @@ def ume_led(r,g,b,brightness=10,mode=1,blink=3,duration=1,rainbow_hue=1):
 #######　編集するのはこの下から！ ###########
 #############################################
 
+def scene_1():
+    eye(3)
+    time.sleep(10)
 
 def scene_2():
     ume_led(r=255,g=255,b=255,brightness=20)
@@ -38,15 +41,15 @@ def scene_3():
     eye(0)
     
 def scene_4():
-    eye(2)
-    act("look_back")
+    #eye(2)
+    #act("look_back")
     ume_led(r=0,g=0,b=255)
-    cheek_led(r=0.g=0,b=255)
+    cheek_led(r=0,g=0,b=255)
 
 def scene_5():
     eye(0)
     cheek_led(r=255,g=192,b=203)
-    ume_led(r=252,g=213,b=117)
+    ume_led(r=255,g=255,b=0)
     act("long_uemuku")
 
 def scene_6():
@@ -56,7 +59,7 @@ def scene_7():
     eye(6)
     cheek_led(r=255,g=192,b=203)
     ume_led(r=255,g=192,b=203)
-    act("patapata")
+    act("speedy_patapata")
 
 def scene_8():
     eye(6)
