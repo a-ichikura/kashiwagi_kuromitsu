@@ -29,23 +29,24 @@ class TeleopJoy(object):
 
     def joy_callback(self, msg):
         rospy.loginfo('{}'.format(msg.buttons))
-        buttons = "".join(map(str, msg.buttons))
+        buttons = msg.buttons
         if self.prev_command == buttons:
             return
         self.prev_command = buttons
-        if buttons == "0100000000000":
+        if buttons[1] == 1:
             print("maru")            
             act("speedy_patapata")
-        elif buttons == "1000000000000":
+        elif buttons[0] == 1:
             print("X")
-        elif buttons == "0010000000000":
+        elif buttons[2] == 1:
             print("sankaku")
             act("unazuku")
-        elif buttons == "0001000000000":
+        elif buttons == [3]:
             print("shikaku")
-        elif buttons == "0000000000100":
+        elif buttons[10] == 1:
             print("ps button")
-            act("init_pose")            
+            act("init_pose")
+            
 
 if __name__ == '__main__':
     # rospy.init_node('teleop_joy')
