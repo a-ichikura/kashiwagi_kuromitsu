@@ -24,22 +24,23 @@ def ume_led(r,g,b,brightness=10,mode=1,blink=3,duration=1,rainbow_hue=1):
 #######　編集するのはこの下から！ ###########
 #############################################
 
-def scene_1():
+def hello():
     time.sleep(2)
-    eye(4)
-    cheek_led(r=255,g=0,b=0,mode=3)
-    act("tap")
+    eye(2)
+    cheek_led(r=255,g=255,b=0,brightness=10)
+    print("start")
+    act("hello")
 
-def scene_2():
+def me():
     time.sleep(2)
-    eye(6)
-    cheek_led(r=255,g=20,b=147,brightness=20,mode=1)
-    act("high-touch")
+    eye(2)
+    cheek_led(r=255,g=105,b=180,brightness=10)
+    act("me")
     
 def scene_3():
     time.sleep(2)
-    eye(0)
-    cheek_led(r=255,g=105,b=180,brightness=10)
+    eye(9)
+    cheek_led(r=255,g=204,b=0,brightness=20)
     act("carry")
     
 def scene_4():

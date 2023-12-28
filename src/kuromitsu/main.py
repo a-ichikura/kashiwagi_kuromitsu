@@ -13,8 +13,8 @@ import situation_3
 import introduction
 
 if __name__ == "__main__":
-    situation_3.scene_6()
-    print("scene6 done")
+    introduction.hello()
+    print("hello done")
    # situation_2.scene_3()
     #print("scene3 done ")
     #situation_2.scene_4()
