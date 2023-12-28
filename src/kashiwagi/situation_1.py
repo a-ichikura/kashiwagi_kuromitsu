@@ -162,8 +162,12 @@ def scene_100():
     cheek_led(r=255,g=255,b=255,brightness=30,mode=3)
     ume_led(r=255,g=165,b=0,brightness=30,mode=1)
     #print("{} done".format("cheek_led"))
+
     #act("init") #動作の名前を入力
 
+
+def test_1000():
+    act("test")
 
 def scene_200():
     act("test")
