@@ -7,7 +7,7 @@ from std_msgs.msg import String
 from std_msgs.msg import UInt16
 from std_msgs.msg import ColorRGBA
 import module 
-#from robotmodel import *
+from robotmodel import *
 
 scene_node = module.Scene_node()
 
@@ -38,3 +38,8 @@ def scene_1():
     #print("{} done".format("cheek_led"))
     #act("init") #動作の名前を入力
     
+def scene_2():
+    print("test start")
+    act("quite")
+    time.sleep(5)
+    act("init")
