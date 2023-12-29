@@ -26,27 +26,33 @@ def ume_led(r,g,b,brightness=10,mode=1,blink=3,duration=1,rainbow_hue=1):
 #######　編集するのはこの下から！ ###########
 #############################################
 
+def test():
+    print("start test")
+    act("test")
+    print("done")
+
 def scene_1():
+    time.sleep(2)
     eye(0)
-    ume_led(r=229,g=163,b=35)
-    act("arm_close")
+    cheek_led(r=255,g=105,b=180,brightness=10)
+    ume_led(r=255,g=0,b=0,brightness=10,mode=2)
 
 def scene_2():
-    eye(0)
-    #ume_led(r=229,g=163,b=35, brightness=20)
-    ume_led(r=255,g=255,b=0)
-    act("right_patapata")
+    time.sleep(2)
+    eye(6)
+    cheek_led(r=255,g=105,b=180,brightness=20)
+    ume_led(r=255,g=255,b=0,brightness=15)
 
 def scene_3():
-    eye(3)
-    ume_led(r=164,g=168,b=212)
-    # ume_led(r=255,g=255,b=0)
-    act("slowly_patapata")
-    cheek_led(r=255,g=192,b=203)
+    time.sleep(2)
+    eye(2)
+    cheek_led(r=0,g=0,b=0,brightness=0)
+    ume_led(r=135,g=206,b=235,brightness=10)
 
 def scene_4():
-    eye(3)
-    ume_led(r=164,g=168,b=212)
-    cheek_led(r=255,g=192,b=203)
+    time.sleep(2)
+    eye(5)
+    cheek_led(r=0,g=0,b=255,brightness=10)
+    ume_led(r=0,g=0,b=255,brightness=20,mode=2)
 
-    
+def scene

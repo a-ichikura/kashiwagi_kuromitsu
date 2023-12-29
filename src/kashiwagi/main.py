@@ -10,6 +10,7 @@ from std_msgs.msg import ColorRGBA
 import situation_1
 import situation_2
 import situation_3
+import colab
 
 if __name__ == "__main__":
     #situation_1.test_1()
@@ -30,5 +31,7 @@ if __name__ == "__main__":
     #situation_1.scene_1()
     #situation_1.scene_2()
     #situation_3.scene_4()
-    situation_3.scene_1()
+    #situation_3.scene_2()
+    colab.scene_6()
+    print("scene_6 done")
     
