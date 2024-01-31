@@ -11,8 +11,10 @@ import situation_1
 import situation_2
 import situation_3
 import colab
+import academic_day
 
 if __name__ == "__main__":
+    print("start main")
     #situation_1.test_1()
     #situation_1.test_2()
     #situation_1.scene_2()
@@ -32,6 +34,9 @@ if __name__ == "__main__":
     #situation_1.scene_2()
     #situation_3.scene_4()
     #situation_3.scene_2()
-    colab.scene_6()
-    print("scene_6 done")
-    
+    #colab.scene_6()
+    academic_day.scene_noon()
+    #academic_day.scene_2()
+    #academic_day.scene_2_2()
+    #academic_day.scene_3()
+    # academic_day.colab()

@@ -9,6 +9,7 @@ from std_msgs.msg import ColorRGBA
 import module 
 from robotmodel import *
 
+print("load colab")
 scene_node = module.Scene_node()
 # rospy.init_node("situation_node")
 
