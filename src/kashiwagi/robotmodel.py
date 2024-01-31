@@ -97,7 +97,9 @@ def servo_off():
 def act(act_name, n_split=None):
     ri.servo_on()
     #json_filepath = "/home/leus/kashiwagi_movie.json"
-    json_filepath = "/home/leus/colab_movie.json"
+    #json_filepath = "/home/leus/colab_movie.json"
+    # json_filepath = "/home/leus/test0114.json"
+    json_filepath = "/home/leus/Downloads/kashiwagi_movie.json"
     if os.path.exists(json_filepath):
         try:
             with open(json_filepath) as f:
