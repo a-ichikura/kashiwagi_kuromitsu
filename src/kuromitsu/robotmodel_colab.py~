@@ -95,12 +95,10 @@ def servo_on():
 def servo_off():
     ri.servo_off()
     
-def act(act_name,path=2):
+def act(act_name):
     ri.servo_on()
-    if path == 1:
-        json_filepath = "/home/ichikura/colab_movie.json"
-    elif path == 2:
-        json_filepath = "/home/ichikura/kuromitsu_movie.json"
+    #json_filepath = "/home/ichikura/colab_movie.json"
+    json_filepath = "/home/ichikura/kuromitsu_movie.json"
     if os.path.exists(json_filepath):
         try:
             with open(json_filepath) as f:

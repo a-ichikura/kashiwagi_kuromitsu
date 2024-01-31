@@ -11,12 +11,24 @@ import situation_1
 import situation_2
 import situation_3
 import introduction
+import colab
+import academic_day
 
 if __name__ == "__main__":
-    introduction.hello()
-    print("hello done")
-   # situation_2.scene_3()
-    #print("scene3 done ")
-    #situation_2.scene_4()
-    #print("scene4 done ")
+    key = "null"
+    while not key == "exit":
+        key = input("input key:")
+        if key == "intro":
+            academic_day.intro()
+        elif key == "1":
+            academic_day.situation_1()
+        elif key == "2" :
+            academic_day.situation_2()
+        elif key == "3" :
+            academic_day.situation_3()
+        elif key == "colab" :
+            academic_day.colab()
+    
+    
+    
     
